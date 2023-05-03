@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>Happy Birthday</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+.click button a {
+    width: 50%;
+    height: 7%;
+    position: fixed;
+    left: 50%;
+    top: 80%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    background: center no-repeat #fff;
+    z-index: 1;
+    font-size: 35px;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    border-radius: .3em;
+    text-transform: unset;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(110, 80, 20, .4),
+        inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
+        inset 0 -1px 1px 3px rgb(250, 203, 133);
+    background-image: linear-gradient(160deg, #60a507, #11b434, #a2fef6, #1b8ebc, #072ca5);
+    border: 1px solid #a55d07;
+    color: rgb(120, 5, 5);
+    text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    background-size: 100% 100%;
+    background-position: center;
+
+}
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="loader">
+                <button id="play">Start</button>
+            </div>
+        </div>
+    </div>
+    <audio class="song" controls loop>
+        <source src="music.mp3">
+        </source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
+    <canvas id="confetti"></canvas>
+    <div class="main">
+        <div class="container pt-5">
+            <div class="row">
+
+                <div class="col-12 col-xl-6 mx-auto">
+                    <img src="img/banner.png" alt="">
+                </div>
+
+                <div class="col-12 click text-center">
+                    <button class=" "><a href="http://info-hip.000webhostapp.com">Hãy gửi những lời chúc cho tôi!!!</a></button>
+                    
+                </div>
+                <div class="col-12 text-center area">Kiệm Híp</div>
+
+                <div class="col-12 text-center">
+                    <div class="type-wrap">
+                        <div id="typed-strings" class="typing">
+                            <h2>Chúc mừng sinh nhật <i id="nae">Híp</i></h2>
+                            <h2>Hôm nay là sinh nhật của tôi</h2>
+                            <h2>Cảm ơn các bạn đã thổi nến cùng tôi ♥♥♥</h2>
+                        </div>
+                        <span id="typed" style="white-space:pre;"></span>
+                    </div>
+                </div>
+                <div class="area">happy</div>
+                <div class="area" style="margin-left: 630px;">birthday</div>
+
+                <div class="col-12 col-xl-3 cake">
+                    <img src="img/cake.gif" alt="">
+                    
+                </div>
+            </div>
+        </div>
+        <img src="img/Balloon-Border.png" width="100%" class="balloon-border">
+    </div>
+</body>
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
